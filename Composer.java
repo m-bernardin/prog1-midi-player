@@ -65,77 +65,48 @@ public class Composer extends Thread
      * PLays the opening riff of 'Cream - Sunshine of your Love' poorly
      * Type "Yes" to hear it on every instrument 
      */
-    public void sunshineOfYourLove(String instrumentSweep)
+    public void sunshineOfYourLove(String instrumentSweep, int startInstrument)
     {
         sunshineOfYourLove = new SimpleTune();
         player1 = new MidiPlayer();
+        //first time
+        sunshineOfYourLove.addNote("D3", 2);
+        sunshineOfYourLove.addNote("D3", 2);
+        sunshineOfYourLove.addNote("C2", 2);
+        sunshineOfYourLove.addNote("D3", 3);
+        sunshineOfYourLove.addNote("A2", 4);
+        sunshineOfYourLove.addNote("G#2", 4);
+        sunshineOfYourLove.addNote("G2", 4);
+        sunshineOfYourLove.addNote("D2", 2);
+        sunshineOfYourLove.addNote("F2", 5);
+        sunshineOfYourLove.addNote("D2", 2);
+        sunshineOfYourLove.addNote("D2", 2);
+        
+        //2nd time
+        sunshineOfYourLove.addNote("D3", 2);
+        sunshineOfYourLove.addNote("D3", 2);
+        sunshineOfYourLove.addNote("C2", 2);
+        sunshineOfYourLove.addNote("D3", 3);
+        sunshineOfYourLove.addNote("A2", 4);
+        sunshineOfYourLove.addNote("G#2", 4);
+        sunshineOfYourLove.addNote("G2", 4);
+        sunshineOfYourLove.addNote("D2", 2);
+        sunshineOfYourLove.addNote("F2", 5);
+        sunshineOfYourLove.addNote("D2", 2);
+        sunshineOfYourLove.addNote("D2", 2);
         if(instrumentSweep == "Yes"){
-            i=0;
-            while(i<=14){
+            i=startInstrument;
+            player1.showInstruments();
+            while(i<=15){
                 sunshineOfYourLove.setInstrument(i);
                 System.out.println("Instrument playing: " + i);
-                //first time
-                sunshineOfYourLove.addNote("D3", 2);
-                sunshineOfYourLove.addNote("D3", 2);
-                sunshineOfYourLove.addNote("C2", 2);
-                sunshineOfYourLove.addNote("D3", 3);
-                sunshineOfYourLove.addNote("A2", 4);
-                sunshineOfYourLove.addNote("G#2", 4);
-                sunshineOfYourLove.addNote("G2", 4);
-                sunshineOfYourLove.addNote("D2", 2);
-                sunshineOfYourLove.addNote("F2", 5);
-                sunshineOfYourLove.addNote("D2", 2);
-                sunshineOfYourLove.addNote("D2", 2);
-        
-                //2nd time
-                sunshineOfYourLove.addNote("D3", 2);
-                sunshineOfYourLove.addNote("D3", 2);
-                sunshineOfYourLove.addNote("C2", 2);
-                sunshineOfYourLove.addNote("D3", 3);
-                sunshineOfYourLove.addNote("A2", 4);
-                sunshineOfYourLove.addNote("G#2", 4);
-                sunshineOfYourLove.addNote("G2", 4);
-                sunshineOfYourLove.addNote("D2", 2);
-                sunshineOfYourLove.addNote("F2", 5);
-                sunshineOfYourLove.addNote("D2", 2);
-                sunshineOfYourLove.addNote("D2", 2);
-
                 player1.playTune(sunshineOfYourLove);
                 i = ++i;
             }
         }
         else{
-            
             sunshineOfYourLove.setInstrument(4);
-        
-            //first time
-            sunshineOfYourLove.addNote("D3", 2);
-            sunshineOfYourLove.addNote("D3", 2);
-            sunshineOfYourLove.addNote("C2", 2);
-            sunshineOfYourLove.addNote("D3", 3);
-            sunshineOfYourLove.addNote("A2", 4);
-            sunshineOfYourLove.addNote("G#2", 4);
-            sunshineOfYourLove.addNote("G2", 4);
-            sunshineOfYourLove.addNote("D2", 2);
-            sunshineOfYourLove.addNote("F2", 5);
-            sunshineOfYourLove.addNote("D2", 2);
-            sunshineOfYourLove.addNote("D2", 2);
-        
-            //2nd time
-            sunshineOfYourLove.addNote("D3", 2);
-            sunshineOfYourLove.addNote("D3", 2);
-            sunshineOfYourLove.addNote("C2", 2);
-            sunshineOfYourLove.addNote("D3", 3);
-            sunshineOfYourLove.addNote("A2", 4);
-            sunshineOfYourLove.addNote("G#2", 4);
-            sunshineOfYourLove.addNote("G2", 4);
-            sunshineOfYourLove.addNote("D2", 2);
-            sunshineOfYourLove.addNote("F2", 5);
-            sunshineOfYourLove.addNote("D2", 2);
-            sunshineOfYourLove.addNote("D2", 2);
-
             player1.playTune(sunshineOfYourLove);
-            System.out.println("Instrument Played: " + i);
             }
         }
     
