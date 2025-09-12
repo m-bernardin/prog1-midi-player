@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Composer
+comment1.params=
+comment1.target=Composer()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Composer\r\n
+comment2.params=
+comment2.target=void\ jingleBells()
+comment2.text=\r\n\ PLays\ the\ song\ 'Jingle\ Bells'\ poorly,\ q48,\ q49\r\n
+comment3.params=instrumentSweep
+comment3.target=void\ sunshineOfYourLove(java.lang.String)
+comment3.text=\r\n\ PLays\ the\ opening\ riff\ of\ 'Cream\ -\ Sunshine\ of\ your\ Love'\ poorly\r\n\ Type\ "Yes"\ to\ hear\ it\ on\ every\ instrument\ \r\n
+comment4.params=
+comment4.target=void\ cChord()
+numComments=5

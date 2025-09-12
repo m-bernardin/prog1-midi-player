@@ -25,3 +25,6 @@ part iii:
 i also messed around a little in this part and created a class which creates and plays a preset tune (i put jingle bells in there as a test)
 i also started on a method which would allow chords to be played, but i dont have the brain to understand multithreading right now
 
+49/50. i realized q46-50 are exactrly what i did to make my composer before, so i wrote in the question numbers as comments in that class
+i also added cream - sunshine of your love to the list of songs my composer can play
+cream also
