@@ -1,5 +1,5 @@
 //q 46, q47
-public class Composer extends Thread
+public class Composer 
 {
     private SimpleTune jingleBells;
     private SimpleTune sunshineOfYourLove;
