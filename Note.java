@@ -11,7 +11,7 @@ public class Note
 {
     // The name of the note; e.g. "C", "C#", "E5", etc.
     private String noteName;
-    // How long the note should last.
+    // How int the note should last.
     private int duration;
     
     /**
@@ -27,7 +27,7 @@ public class Note
     /**
      * Create a note with the given duration.
      * @param noteName The name of the note.
-     * @param duration How long the note should last.
+     * @param duration How int the note should last.
      */
     public Note(String noteName, int duration) 
     {

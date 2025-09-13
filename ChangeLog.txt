@@ -1,0 +1,5 @@
+Version 1.0
+final lab upload (see README)
+
+Version 1.1
+-added 'Oh Canada' to Composer Songs, its speed can be changed when its played 

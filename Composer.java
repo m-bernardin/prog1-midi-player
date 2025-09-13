@@ -1,8 +1,9 @@
-//q 46, q47
+//q46, q47
 public class Composer 
 {
     private SimpleTune jingleBells;
     private SimpleTune sunshineOfYourLove;
+    private SimpleTune ohCanada;
     private MidiPlayer player1;
     private MidiPlayer player2;
     private MidiPlayer player3;
@@ -105,7 +106,7 @@ public class Composer
             }
         }
         else{
-            sunshineOfYourLove.setInstrument(4);
+            sunshineOfYourLove.setInstrument(4); 
             player1.playTune(sunshineOfYourLove);
             }
         }
@@ -124,5 +125,108 @@ public class Composer
         player1.playTune(firstNote);
         player2.playTune(secondNote);
         player3.playTune(thirdNote);        
+    }
+    
+    public void ohCanada(int speed)
+    {
+       ohCanada = new SimpleTune();
+       player1 = new MidiPlayer();
+       ohCanada.addNote("E2", 4 * speed);
+       ohCanada.addNote("G2", 3 * speed);  
+       ohCanada.addNote("G2", 1 * speed);
+       ohCanada.addNote("C2", 6 * speed);
+       ohCanada.addNote("D2", 2 * speed);
+       ohCanada.addNote("E2", 2 * speed);
+       ohCanada.addNote("F2", 2 * speed);
+       ohCanada.addNote("G2", 2 * speed);
+       ohCanada.addNote("A2", 2 * speed);
+       ohCanada.addNote("D2", 6 * speed);
+
+       ohCanada.addNote("E2", 4 * speed);
+       ohCanada.addNote("F#2", 3 * speed);
+       ohCanada.addNote("F#2", 1 * speed);
+       ohCanada.addNote("G2", 6 * speed);
+       ohCanada.addNote("A2", 2 * speed);
+       ohCanada.addNote("B2", 2 * speed);
+       ohCanada.addNote("B2", 2 * speed);
+       ohCanada.addNote("A2", 2 * speed);
+       ohCanada.addNote("A2", 2 * speed);
+       ohCanada.addNote("G2", 6 * speed);
+
+       ohCanada.addNote("D2", 1 * speed);
+       ohCanada.addNote("E2", 1 * speed);
+       ohCanada.addNote("F2", 3 * speed);
+       ohCanada.addNote("E2", 1 * speed);
+       ohCanada.addNote("D2", 2 * speed);
+       ohCanada.addNote("E2", 1 * speed);
+       ohCanada.addNote("F2", 1 * speed);
+       ohCanada.addNote("G2", 3 * speed);
+
+       ohCanada.addNote("F2", 1 * speed);
+       ohCanada.addNote("E2", 2 * speed);
+       ohCanada.addNote("F2", 1 * speed);
+       ohCanada.addNote("G2", 1 * speed);
+       ohCanada.addNote("A2", 2 * speed);
+       ohCanada.addNote("G2", 2 * speed);
+       ohCanada.addNote("F2", 2 * speed);
+       ohCanada.addNote("E2", 2 * speed);
+       ohCanada.addNote("D2", 6 * speed);
+
+       ohCanada.addNote("D2", 1 * speed);
+       ohCanada.addNote("E2", 1 * speed);
+       ohCanada.addNote("F2", 3 * speed);
+       ohCanada.addNote("E2", 1 * speed);
+       ohCanada.addNote("D2", 2 * speed);
+       ohCanada.addNote("E2", 1 * speed);
+       ohCanada.addNote("F2", 1 * speed);
+       ohCanada.addNote("G2", 3 * speed);
+       
+       ohCanada.addNote("F2", 1 * speed);
+       ohCanada.addNote("E2", 2 * speed);
+       ohCanada.addNote("E2", 2 * speed);
+       ohCanada.addNote("D2", 2 * speed);
+       ohCanada.addNote("G2", 2 * speed);
+       ohCanada.addNote("G2", 1 * speed);
+       ohCanada.addNote("F#2", 1 * speed);
+       ohCanada.addNote("E2", 1 * speed);
+       ohCanada.addNote("F#2", 1 * speed);
+
+       ohCanada.addNote("G2", 8 * speed);
+       ohCanada.addNote("F2", 2 * speed);
+       ohCanada.addNote("E2", 2 * speed);
+       ohCanada.addNote("D2", 2 * speed);
+       ohCanada.addNote("E2", 4 * speed);
+       ohCanada.addNote("G2", 3 * speed);
+       ohCanada.addNote("G2", 1 * speed);
+       ohCanada.addNote("C2", 8 * speed);
+
+       ohCanada.addNote("F2", 4 * speed);
+       ohCanada.addNote("A2", 3 * speed);
+       ohCanada.addNote("A2", 1 * speed);
+       ohCanada.addNote("D2", 8 * speed);
+
+       ohCanada.addNote("G2", 4 * speed);
+       ohCanada.addNote("G#2", 3 * speed);
+       ohCanada.addNote("G2", 1 * speed);
+       ohCanada.addNote("A2", 2 * speed);
+       ohCanada.addNote("F2", 2 * speed);
+       ohCanada.addNote("E2", 2 * speed);
+       ohCanada.addNote("D2", 2 * speed);
+       ohCanada.addNote("C2", 4 * speed);
+       ohCanada.addNote("D2", 4 * speed);
+       ohCanada.addNote("E2", 8 * speed);
+
+       ohCanada.addNote("G2", 4 * speed);
+       ohCanada.addNote("C3", 3 * speed);
+       ohCanada.addNote("C3", 1 * speed);
+       ohCanada.addNote("A2", 2 * speed);
+       ohCanada.addNote("F2", 2 * speed);
+       ohCanada.addNote("E2", 2 * speed);
+       ohCanada.addNote("D2", 2 * speed);
+       ohCanada.addNote("G2", 4 * speed);
+       ohCanada.addNote("B1", 4 * speed);
+       ohCanada.addNote("C2", 8 * speed);
+
+       player1.playTune(ohCanada);
     }
 }

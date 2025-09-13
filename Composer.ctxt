@@ -11,4 +11,6 @@ comment3.target=void\ sunshineOfYourLove(java.lang.String,\ int)
 comment3.text=\r\n\ PLays\ the\ opening\ riff\ of\ 'Cream\ -\ Sunshine\ of\ your\ Love'\ poorly\r\n\ Type\ "Yes"\ to\ hear\ it\ on\ every\ instrument\ \r\n
 comment4.params=
 comment4.target=void\ cChord()
-numComments=5
+comment5.params=speed
+comment5.target=void\ ohCanada(int)
+numComments=6
